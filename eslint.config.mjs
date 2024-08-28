@@ -12,6 +12,7 @@ export default [
     env: {
       ...env,
       node: true,
+      es2020: true,
     },
     languageOptions: {
       parser: typescriptParser,
@@ -19,6 +20,7 @@ export default [
         ecmaVersion: 'latest',
         sourceType: 'module',
         project: './tsconfig.json',
+        tsconfigRootDir: process.cwd(),
       },
     },
     plugins: {
